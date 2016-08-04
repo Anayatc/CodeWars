@@ -18,4 +18,4 @@ def decodeMorse(morseCode):
 
 
 
-print decodeMorse('...---...')
+print decodeMorse('-- .- .... -- ..- -..')

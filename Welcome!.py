@@ -19,6 +19,8 @@ welcome = {
 }
 
 def greet(language):
-    return welcome.get(language, 'Welcome')
+    # return welcome.get(language, 'Welcome')
+    return welcome[language]
 
-print greet('dutch')
+print greet('spanish')
+

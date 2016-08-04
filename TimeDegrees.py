@@ -34,4 +34,4 @@ def clock_degree(s):
         result.append((n % denominator) / denominator * 360)
     return str(int(result[0])) + ':' + str(int(result[1]))
 
-print clock_degree("00:00")
+print clock_degree("18:15")

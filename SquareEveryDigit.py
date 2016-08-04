@@ -1,6 +1,7 @@
 def square_digits(num):
-    digits = list(str(num))
-    #squared = [x * x for x in digits]
-    #return "".join(squared)
-    return 
-print square_digits(123)
+    list = []
+    for i in str(num):
+        list.append(str(int(i)**2))
+    return int("".join(list))
+
+print square_digits()
