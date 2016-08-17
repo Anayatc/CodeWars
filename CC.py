@@ -66,5 +66,5 @@ def find(folder):
                     g = g + 1
                     e = e + 1
 
-find('/Users/Anayat/Movies')
+find('/Users/Anaya/Movies')
 
