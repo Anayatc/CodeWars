@@ -16,6 +16,12 @@ values = ['.', '[', ']', '(', ')', 'm720p', '480p', '480', 'DVDSCR', 'BrRip', 'N
 
 def find(folder):
     for x in os.listdir(folder):
+        # Edit to Regular Expression (Uncomment it if you want to use it.)
+        '''
+        if (re.search('^\s*[4-9]',x)):
+            continue
+        '''
+        # I found this easier to implement and read though. (I removed the dirty code)
         if (x[0].isdigit() and x[0] > 4):
             continue
         moviename = folder + '//' + x
@@ -24,7 +30,7 @@ def find(folder):
                 x = x.replace(str(y), " ")
         for z in values:
             if (str(z) in x):
-                x =  x.replace(str(z), " ")
+                x = x.replace(str(z), " ")
             if ("  " in x):
                 x = x.replace("  ", " ")
         url = 'http://www.omdbapi.com/?t=' + str(x)
@@ -66,5 +72,5 @@ def find(folder):
                     g = g + 1
                     e = e + 1
 
-find('/Users/Anaya/Movies')
 
+find('/Users/Anayat/Movies')
