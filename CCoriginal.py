@@ -13,7 +13,6 @@ values = ['.', '[', ']', '(', ')', 'm720p', '480p', '480', 'DVDSCR', 'BrRip', 'N
           'StyLishSaLH'
     , 'DVD', 'dvd', 'DVDRip', 'RIP', 'rip', 'Rip', 'Back In Action']
 
-
 def find(folder):
     for x in os.listdir(folder):
         # Edit to Regular Expression (Uncomment it if you want to use it.)
