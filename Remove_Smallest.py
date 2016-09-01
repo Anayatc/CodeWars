@@ -1,5 +1,8 @@
 def remove_smallest(numbers):
-    numbers.remove(min(numbers))
-    return numbers
+    if numbers == []:
+        return []
+    else:
+        numbers.remove(min(numbers))
+        return numbers
 
-print remove_smallest([1,2,3,4])
+print remove_smallest([])
