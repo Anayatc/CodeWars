@@ -2,4 +2,4 @@ def binary(a):
     return bin(a)
 
 
-print binary(9590)
+print binary(1111)
