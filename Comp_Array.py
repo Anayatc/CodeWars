@@ -7,7 +7,4 @@ def compare(x,y):
             print i
 
 
-def comp1(c,d):
-    return [i for i == i in c and j in d]
-
-print comp1(a,b)
+print compare(a,b)
