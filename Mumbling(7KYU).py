@@ -12,5 +12,6 @@ x = 'abccba'
 
 print accum(x)
 
-aa = 'Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnn-Uuuuuuuuuuu'
-bb = 'Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu'
+'''
+This time no story, no theory. The examples below show you how to write function accum:
+'''
