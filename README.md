@@ -1,0 +1,2 @@
+# CodeWars
+Python Kata Solutions
