@@ -1,2 +1,0 @@
-# CodeWars
- Python Kata Solutions
