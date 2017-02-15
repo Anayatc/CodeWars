@@ -11,7 +11,7 @@ def rot13(message):
     lower = ''.join(list(lower))
     return message.translate(string.maketrans(string.ascii_uppercase, upper)).translate(string.maketrans(string.ascii_lowercase, lower))
 
-print rot13('Anayat')
+print(rot13('Anayat'))
 
 '''
 Description:
