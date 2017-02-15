@@ -1,12 +1,14 @@
 def high_and_low(numbers):
     results = map(int, numbers.split())
-    numbers = "%s %s" %(max(results), min(results))
+    numbers = "%s %s" % (max(results), min(results))
     return numbers
 
 
-print high_and_low('5,3,2,1')
+print(high_and_low('5,3,2,1'))
 
 '''
+ONLY WORKS WITH PYTHON2
+
 Description:
 
 In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
