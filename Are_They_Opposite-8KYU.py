@@ -1,6 +1,8 @@
 def is_opposite(s1, s2):
     return False if not(s1 or s2) else s1.swapcase() == s2
 
+print(is_opposite('', ''))
+
 '''
 Before Refactoring
 def is_opposite(s1, s2):
@@ -14,8 +16,6 @@ def is_opposite(s1, s2):
             count[i] = True
     return all(count)
 '''
-
-print(is_opposite('', ''))
 
 '''
 Description:
