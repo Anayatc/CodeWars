@@ -13,7 +13,7 @@ def get_honor(username):
     regexHandler = re.compile('<div class="stat"><b>Honor:</b>(.*?)</div>')
     result = regexHandler.search(str(dataset))
     matchedText = result.groups()[0]
-    return matchedText.replace(',','')
+    return int(matchedText.replace(',',''))
 
 #<div class="stat"><b>Honor:</b>762</div>
 
