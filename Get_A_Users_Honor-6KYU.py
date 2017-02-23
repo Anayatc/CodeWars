@@ -1,14 +1,21 @@
+import urllib.request
 from bs4 import BeautifulSoup
 import requests
 import re
 
 
 def get_honor(username):
-    data = requests.get('https://www.codewars.com/users/'+username).text
+    userurl = 'https://www.codewars.com/users/'+username
+    r = requests.get(userurl)
+    data = r.text
+    soup = BeautifulSoup(data, 'html.parser')
+    dataset = soup.findAll("div", {"class" : "stat"})
     regexHandler = re.compile('<div class="stat"><b>Honor:</b>(.*?)</div>')
-    result = regexHandler.search(str(BeautifulSoup(data, 'html.parser')))
-    return int(result.groups()[0].replace(',',''))
+    result = regexHandler.search(str(dataset))
+    matchedText = result.groups()[0]
+    return int(matchedText.replace(',',''))
 
+#<div class="stat"><b>Honor:</b>762</div>
 
 print(get_honor('Anayat'))
 
