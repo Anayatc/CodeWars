@@ -1,19 +1,13 @@
-import urllib.request
 from bs4 import BeautifulSoup
 import requests
 import re
 
-
 def get_honor(username):
-    userurl = 'https://www.codewars.com/users/'+username
-    r = requests.get(userurl)
-    data = r.text
-    soup = BeautifulSoup(data, 'html.parser')
+    soup = BeautifulSoup(requests.get('https://www.codewars.com/users/'+username).text, 'html.parser')
     dataset = soup.findAll("div", {"class" : "stat"})
     regexHandler = re.compile('<div class="stat"><b>Honor:</b>(.*?)</div>')
     result = regexHandler.search(str(dataset))
-    matchedText = result.groups()[0]
-    return int(matchedText.replace(',',''))
+    return int(result.groups()[0].replace(',',''))
 
 #<div class="stat"><b>Honor:</b>762</div>
 
@@ -24,12 +18,13 @@ Description:
 
 Task:
 
-Write a function get_honor which accepts a username from someone at Codewars and returns an integer containing the user's honor. If input is invalid, raise an error.
+Write a function get_honor which accepts a username from someone at Codewars and returns an integer containing the
+user's honor. If input is invalid, raise an error.
 
-If you want/don't want your username to be in the tests, ask me in the discourse area. There can't be too many though because the server may time out.
+If you want/don't want your username to be in the tests, ask me in the discourse area. There can't be too many though
+because the server may time out.
 
 Example¹:
-
 >>> get_honor('dpleshkov')
 4418
 >>> get_honor('jhoffner')
@@ -39,7 +34,6 @@ Example¹:
 Libraries/Recommendations:
 
 Python:
-
 urllib.request.urlopen: Opens up a webpage.
 re: The RegEx library for Python.
 bs4(BeautifulSoup): A tool for scraping HTML and XML.
