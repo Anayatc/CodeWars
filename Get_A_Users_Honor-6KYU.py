@@ -6,8 +6,7 @@ def get_honor(username):
     soup = BeautifulSoup(requests.get('https://www.codewars.com/users/'+username).text, 'html.parser')
     dataset = soup.findAll("div", {"class" : "stat"})
     regexHandler = re.compile('<div class="stat"><b>Honor:</b>(.*?)</div>')
-    result = regexHandler.search(str(dataset))
-    return int(result.groups()[0].replace(',',''))
+    return int(regexHandler.search(str(dataset)).groups()[0].replace(',',''))
 
 #<div class="stat"><b>Honor:</b>762</div>
 
