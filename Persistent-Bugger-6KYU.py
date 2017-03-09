@@ -11,7 +11,7 @@ def persistence(n):
 
 
 
-print(persistence(39))
+print(persistence(999))
 
 '''
 Description:
