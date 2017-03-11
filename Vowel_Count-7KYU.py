@@ -8,7 +8,7 @@ def getCount(inputStr):
     return a + b + c + d + e
 
 
-print getCount('hello world')
+print(getCount('hello world'))
 
 '''
 Description:
