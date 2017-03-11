@@ -4,13 +4,23 @@ import operator
 def persistence(n):
     count = 0
     while n > 9:
+<<<<<<< HEAD
         n = (functools.reduce(operator.mul, [int(i) for i in str(n)], 1))
         count += 1
+=======
+        y = (functools.reduce(operator.mul, [int(i) for i in str(n)], 1))
+        n = y
+        count +=1
+>>>>>>> 13cd5609d1e1341e7f77dd916a314bd3d50e65da
     return count
 
 
 
+<<<<<<< HEAD
 print(persistence(999))
+=======
+print(persistence(39))
+>>>>>>> 13cd5609d1e1341e7f77dd916a314bd3d50e65da
 
 '''
 Description:
