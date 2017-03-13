@@ -4,9 +4,8 @@ import operator
 def persistence(n):
     count = 0
     while n > 9:
-        y = (functools.reduce(operator.mul, [int(i) for i in str(n)], 1))
-        n = y
-        count +=1
+        n = (functools.reduce(operator.mul, [int(i) for i in str(n)], 1))
+        count += 1
     return count
 
 
