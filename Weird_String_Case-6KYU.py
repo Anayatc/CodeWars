@@ -1,8 +1,5 @@
-def words(s):
-    return ''.join(c.upper() if i % 2 == 0 else c for i, c in enumerate(s.lower()))
-
 def to_weird_case(s):
-    return ' '.join(words(i) for i in s.split())
+    return ' '.join([''.join([x[n].upper() if n%2==0 else x[n].lower() for n in range(len(x))]) for x in s.split()])
 
 
 print(to_weird_case('hello world'))
