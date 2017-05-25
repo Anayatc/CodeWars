@@ -6,9 +6,9 @@ Write a function `findNeedle()` that takes an array full of junk but containing 
 
 After your function finds the needle it should return a message (as a string) that says:  
 
-"found the needle at position " plus the index it found the needle  
+`"found the needle at position "` plus the index it found the needle.  
 
-So  
+So...  
 
 `find_needle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk'])`  <br><br>
 should return
