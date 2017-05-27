@@ -1,9 +1,5 @@
-def array_diff(a, b):
-    return [i for i in a if i not in b]
+# Description 
 
-
-print(array_diff([1,2,2,2,3],[2]))
-'''
 Your goal in this kata is to implement an difference function, which subtracts one list from another.
 
 It should remove all values from list a, which are present in list b.
