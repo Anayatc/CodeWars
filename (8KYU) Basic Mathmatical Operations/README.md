@@ -6,7 +6,7 @@ The function should take three arguments - operation(string/char), value1(number
 
 Examples:
 
-basic_op('+', 4, 7)         # Output: 11  
-basic_op('-', 15, 18)       # Output: -3  
-basic_op('*', 5, 5)         # Output: 25  
-basic_op('/', 49, 7)        # Output: 7  
+`basic_op('+', 4, 7)`         == Output: 11  
+`basic_op('-', 15, 18)`       == Output: -3  
+`basic_op('*', 5, 5)`         == Output: 25  
+`basic_op('/', 49, 7)`        == Output: 7  
