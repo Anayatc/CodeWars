@@ -9,7 +9,7 @@ d = 'donnie'
 
 
 
-print(duck_duck_goose([a, b, c, d], 50))
+print(duck_duck_goose([a, b, c, d], 101))
 
 '''
 
